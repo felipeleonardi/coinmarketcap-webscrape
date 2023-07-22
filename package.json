@@ -1,0 +1,19 @@
+{
+  "name": "webscrapers",
+  "version": "1.0.0",
+  "description": "Scraping of CoinmarketCap getting information about price, volume, market cap, etc of cryptocurrencies using puppeteer in NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "dev": "npx tsc-watch --onSuccess \"node ./dist/index.js\"",
+    "build": "tsc",
+    "postinstall": "npm run build"
+  },
+  "keywords": [],
+  "author": "Felipe Leonardi D'Amaro",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.3"
+  }
+}
